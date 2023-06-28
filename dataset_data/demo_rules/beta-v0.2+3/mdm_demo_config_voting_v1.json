@@ -1,0 +1,106 @@
+{
+      "version": "1",
+      "blockingFields": [
+         ["soc_sec_id"],
+         ["suburb"],
+         ["date_of_birth"]
+      ],
+      "matchFeatures": [
+         {
+            "name": "birthday",
+            "field": "date_of_birth",
+            "matcher": {
+               "algorithm": "STRING"
+            }
+         },
+         {
+            "name": "address_1",
+            "field": "address_1",
+            "matcher": {
+               "algorithm": "LEVENSCHTEIN",
+               "matchThreshold": 0.5
+            }
+         },
+         {
+            "name": "address_2",
+            "field": "address_2",
+            "matcher": {
+               "algorithm": "LEVENSCHTEIN",
+               "matchThreshold": 0.5
+            }
+         },
+         {
+            "name": "suburb",
+            "field": "suburb",
+            "matcher": {
+               "algorithm": "LEVENSCHTEIN",
+               "matchThreshold": 0.5
+            }
+         },
+         {
+            "name": "postcode",
+            "field": "postcode",
+            "matcher": {
+               "algorithm": "STRING"
+            }
+         },
+         {
+            "name": "state",
+            "field": "state",
+            "matcher": {
+               "algorithm": "LEVENSCHTEIN",
+               "matchThreshold": 0.5
+            }
+         },
+         {
+            "name": "firstname-caverphone",
+            "field": "given_name",
+            "matcher": {
+               "algorithm": "CAVERPHONE1"
+            }
+         },
+         {
+            "name": "lastname-caverphone",
+            "field": "surname",
+            "matcher": {
+               "algorithm": "CAVERPHONE1"
+            }
+         },
+         {
+            "name": "firstname-jaro",
+            "field": "given_name",
+            "similarity": {
+               "algorithm": "JARO_WINKLER",
+               "matchThreshold": 0.8
+            }
+         },
+         {
+            "name": "name-voting",
+            "resourceType": "Patient",
+            "ml": {
+               "algorithm": "VotingClassifier",
+               "classifiers":["LogisticRegression", "RandomForestClassifier", "GaussianNaiveBayes"],
+               "matchThreshold": 0.6,
+               "possibleMatchThreshold": 0.4,
+               "recordFeatures": ["firstname-caverphone", "lastname-caverphone"]
+            }
+         },
+         {
+            "name": "address_voting",
+            "resourceType": "Patient",
+            "ml": {
+               "algorithm": "VotingClassifier",
+               "classifiers":["LogisticRegression", "RandomForestClassifier", "GaussianNaiveBayes"],
+               "matchThreshold": 0.6,
+               "possibleMatchThreshold": 0.4,
+               "recordFeatures": ["suburb", "address_1", "address_2"]
+            }
+         }
+      ],
+      "matchRules": {
+            "firstname-caverphone,lastname-caverphone,suburb,address_1,address_2":"MATCH",
+            "firstname-caverphone,lastname-caverphone,address_voting":"MATCH",
+            "name-voting,suburb,address_1,address_2":"MATCH",
+            "name-voting,address_voting":"MATCH"
+      }
+}

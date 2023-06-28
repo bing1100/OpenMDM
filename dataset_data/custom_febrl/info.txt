@@ -1,0 +1,9 @@
+train:
+created with:
+python generate.py /Users/thomasfortin/Desktop/School/masters/mdm/src/dataset_data/custom_febrl/train.csv 10000 1000 4 3 4 poisson
+on March 28, 2023
+
+test:
+created with:
+python generate.py /Users/thomasfortin/Desktop/School/masters/mdm/src/dataset_data/custom_febrl/test.csv 10000 2000 6 3 4 uniform
+on March 28, 2023

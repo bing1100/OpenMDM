@@ -1,0 +1,21 @@
+rec_id, given_name, surname, street_number, address_1, address_2, suburb, postcode, state, date_of_birth, age, phone_number, soc_sec_id, blocking_number
+rec-4-dup-2, james, burkevics, 4, padbury dyreet, , pentland, 3183, vic, 19730501, 27, , 2698648, 5
+rec-4-dup-1, james, burkevics, 1, padbury street, haling cottage, pentland, 3183, vic, 19730501, 27, , 2698648, 5
+rec-6-org,   bailey, coleman, 25, sampson close, tudor, deakin, 3844, vic, 19740404, 22, 08 26465395, 9317007, 7
+rec-1-dup-2, cooper, binns, 20, warragamba avenue, , new town, 6353, vic, 19361120, 28, 02 56429459, 9401116, 7
+rec-1-dup-3, cooper, binns, 20, warragamba avenue, , new town, 6433, vic, 19361123, 28, 02 56420459, 9401116, 7
+rec-7-dup-1, joshua, thorpe, 1, sheehy street, , launching place, 2558, nsw, 19491024, 31, 02 05829733, 5771911, 3
+rec-1-dup-0, cooper, binns, 29, warragamba avenue, , new toin, 6353, vic, 19361123, 28, 02 56420459, 9401116, 7
+rec-2-org,   joshua, lowe, 91, , sec 203, ingleburn, 2440, qld, 19690907, 30, 03 89811732, 9275691, 0
+rec-4-dup-0, burkevics, james, 4, padbury street, , pentland, 3183, vic, 19730501, 27, , 2698648, 5
+rec-8-org,   tansy, mcgurk, 13, smart place, , ashfield, 4101, nsw, 19320512, 7, 08 30097665, 8622356, 9
+rec-7-dup-0, joshua, thorpe, 139, sheehy street, , launching place, 2558, nsw, 19491024, 35, 02 05829733, 5771911, 3
+rec-9-org,   chloe, thorpe, 10, henry street, legacy vlge, campsie, 2263, nsw, 19760114, 34, 08 38686381, 6168345, 4
+rec-4-org,   james, burkevics, 4, padbury street, , pentland, 3183, vic, 19730501, 27, , 2698648, 5
+rec-1-org,   cooper, binns, 20, warragamba avenue, , new town, 6353, vic, 19361123, 28, 02 56420459, 9401116, 7
+rec-1-dup-1, binns, cooper, 20, warragamba avenue, , new town, 6353, vic, 19361123, 28, 02 56420459, 9401116, 7
+rec-0-org,   clain, hashmi, 46, mackay crescent, rsde 302, harbord, 2795, act, 19810213, 27, 08 56380331, 3432320, 5
+rec-7-org,   joshua, thorpe, 1, sheehy street, , launching place, 2558, nsw, 19491024, 35, 02 05829733, 5771911, 3
+rec-7-dup-2, joshua, thorhp, 1, sheehy street, , launching place, 2558, nsw, 19491024, 35, 02 05829733, 5771911, 3
+rec-3-org,   caitlin, bratovic, 44, biddell place, , wantirna, 2582, nsw, 19401207, 20, 02 24923753, 1621066, 6
+rec-5-org,   carly, bishop, 82, northbourne avenue, , kangaloon, 3204, wa, 19501028, 27, 04 47544000, 6787093, 1
